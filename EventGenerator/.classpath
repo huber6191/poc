@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/resources"/> 
+	
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.context-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.core-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.beans-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.asm-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.expression-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.transaction-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.jdbc-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.orm-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.test-3.0.4.RELEASE.jar"/>
+	
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.aop-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/aopalliance.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_45"/>
+	<classpathentry kind="lib" path="C:/MainFolder/oracle_jdbc_driver/ojdbc5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/WebSphere/AppServer/lib/j2ee.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/slf4j-api-1.7.2.jar"/> 
+	<classpathentry kind="lib" path="C:/@repository/@libs/third-party/junit4.7/junit-4.7.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/integri-ucb/hibernate-commons-annotations-3.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/integri-ucb/hibernate-core-3.6.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/hibernate-search-3.4.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/hibernate-validator-4.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/lucene-analyzers-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/lucene-core-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/javassist-3.15.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/ucb_shared_libs/ndms_libs/commons-io-2.0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

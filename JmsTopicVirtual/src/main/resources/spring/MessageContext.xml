@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 	<!--  load properties -->
+ 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    	<property name="ignoreResourceNotFound" value="false"/>
+    	<property name="ignoreUnresolvablePlaceholders" value="false"/>
+    	<property name="locations">
+        <list>        
+            <value>resources.properties</value>
+        </list>
+    </property>
+    </bean>
+    
+    
+	<!--  CONNECTION FACTORY -->
+    <bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <constructor-arg index="0" value="${jms.broker.url}"/>
+    </bean>
+    
+    <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <constructor-arg ref="amqConnectionFactory" />
+    </bean>
+    
+
+    <!--  JMS TEMPLATES  -->
+    <bean id="jmsTemplateTopic" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="defaultDestination" ref="topicDestination" /> 
+    </bean>
+    
+    <bean id="jmsTemplateQueue1" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="defaultDestination" ref="queueDestination1" /> 
+    </bean>
+    
+    <bean id="jmsTemplateQueue2" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="defaultDestination" ref="queueDestination2" /> 
+    </bean>    
+             
+    
+    <!--   TOPIC - VIRTUAL  -->
+    <bean id="topicDestination" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg index="0" value="${jms.topic.name}"/>
+    </bean>  
+    
+    
+    <!--   QUEUE 1 - PHYSICAL  -->
+    <bean id="queueDestination1" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg index="0" value="${jms.queue.name1}"/>
+    </bean>    
+     
+     
+    <!--   QUEUE 2 - PHYSICAL  -->
+    <bean id="queueDestination2" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg index="0" value="${jms.queue.name2}"/>
+    </bean>    
+     
+    
+     
+</beans> 

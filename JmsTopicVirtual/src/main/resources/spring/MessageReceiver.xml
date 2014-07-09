@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	<import resource="classpath*:spring/MessageContext.xml" />	
+
+    <!-- CONSUMERS  -->
+    <bean id="messageReceiver1" class="com.integri.jms.MessageReceiver" /> 
+	<bean id="messageReceiver2" class="com.integri.jms.MessageReceiver" />
+
+
+	 <!-- LISTENER CONTAINERS -->
+    <bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="destinationName" value="${jms.queue.name1}" />
+        <property name="messageListener" ref="messageReceiver1" />
+    </bean>
+     
+    <bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="destinationName" value="${jms.queue.name2}" />
+        <property name="messageListener" ref="messageReceiver2" />
+    </bean>    
+     
+</beans> 

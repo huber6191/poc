@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/@software/activemq/apache-activemq-5.10-SNAPSHOT/activemq-all-5.10-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.jms-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.context-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.core-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.beans-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.asm-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.expression-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/@repository/@libs/NDMS_Library/org.springframework.transaction-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
